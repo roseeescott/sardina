@@ -954,7 +954,7 @@ main {
     background-color: #D8E3F6; }
     @media only screen and (max-width: 33.75em) {
       main section.section-11 .background {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/DSC5007.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/_DSC5007.jpg");
         background-size: cover;
         background-position: center; } }
     @media only screen and (max-width: 48em) {
@@ -979,7 +979,7 @@ main {
         margin-right: -2%;
         width: 104%; } }
     main section.section-11 .col-12 {
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/DSC5007.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/_DSC5007.jpg");
       background-size: cover;
       background-position: center;
       text-align: center; }
