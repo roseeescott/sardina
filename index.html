@@ -1,9 +1,433 @@
-<html>
-  <head>
-    <title>Sardina Surf</title>
-  </head>
-  <body>
-    <h1>More from Sardina coming soon...</h1>
-    <footer></footer>
-  </body>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sardina</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div class="overlay hide">
+          <ul>
+            <li><a id="section-2-link" href="#">Who we are</a></li>
+            <li><a id="section-4-link" href="#">Offers</a></li>
+            <li><a id="section-8-link" href="#">The Location</a></li>
+            <li><a id="section-10-link" href="#">Local Guide</a></li>
+            <li><a id="section-11-link" href="#">Practical Information</a></li>
+            <li><a id="section-13-link" href="#">Get in touch</a></li>
+          </ul>
+        </div>
+
+        <header>
+          <h1><span>Sardina</span></h1>
+          <div class="menu">
+            <img src="img/menu.svg">
+          </div>
+          <div class="close">
+            <img src="img/close.svg">
+          </div>
+        </header>
+
+        <main>
+          <section id="section-1" class="section-1">
+            <div class="headline-wrapper">
+              <div class="headline">
+                <h2>A local
+                <br />movement</h2>
+                <div class="tide">
+                  <img src="img/tide-white.svg">
+                </div>
+              </div>
+            </div>
+            <div class="arrow-down">
+              <img src="img/arrow-down.svg">
+            </div>
+          </section>
+
+          <section id="section-2" class="section-2">
+            <div class="container">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="text-wrapper">
+                    <div class="text">
+                      <p>We offer unforgettable surf adventures against the rugged backdrop of the Pacific Coast of Nicaragua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-3" class="section-3">
+            <div class="wrapper">
+              <div class="container med">
+                <div class="row">
+                  <div class="col-5">
+                    <div class="text-wrapper">
+                      <div class="text">
+                        <p>We’re a family run local surf movement based in Popoyo, Nicaragua. Whether you choose us to get you started with surf, help you improve your skills or show you the best surf spots, you can be guaranteed an authentic experience.</p>
+                        <p><br />We cater for individuals, couples, families and larger groups.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="image-wrapper">
+                <img src="img/2010_IndiaSurf_37_f11.jpg">
+              </div>
+              <div class="container large">
+                <div class="row">
+                  <div class="col-5">
+                    <div class="text-wrapper">
+                      <div class="text">
+                        <p>We’re a family run local surf movement based in Popoyo, Nicaragua. Whether you choose us to get you started with surf, help you improve your skills or show you the best surf spots, you can be guaranteed an authentic experience.</p>
+                        <p><br />We cater for individuals, couples, families and larger groups.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-4" class="section-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="text">
+                        <h2>Offers</h2>
+                        <p>From absolute beginners to experienced surfers, we have the instructors and guides with the knowledge needed to take you to your next level. We want to get you in the water and on the waves as soon as possible but safety comes first. All initial sessions start with a land based briefing which includes a run through of our safety practices.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-5" class="section-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img src="img/_DSC4293.jpg">
+                    </div>
+                    <div class="text">
+                      <h3>Surf Lessons</h3>
+                      <p>Ideal if you’ve never surfed before, want a bit of a refresher or to pick up some tips on the local breaks. In a group lesson, we ensure a minimum of 1 instructor to 3 students, with in-the-water support at all times. Lessons typically last 2 hours and prices include board hire.</p>
+                      <span>Private lessons from $35</span> <span class="no-mobile">|</span> <span>Group lessons from $30</span>
+                    </div>
+                    <div class="link">
+                      <a href="mailto:hola@sardina.surf">Get in touch about our Lessons</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img src="img/_DSC4633.jpg">
+                    </div>
+                    <div class="text">
+                      <h3>Surf Packages</h3>
+                      <p>If you’re looking to book in for a few lessons or have a goal in mind then a package might be the best option for you.</p>
+                      <p>Due to the nature of surf, we believe it is important to tailor each package to the individual so please get in touch for more details.</p>
+                    </div>
+                    <div class="link">
+                      <a href="mailto:hola@sardina.surf">Get in touch about our Packages</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="wrapper">
+                    <div class="image">
+                      <img src="img/_DSC4781.jpg">
+                    </div>
+                    <div class="text">
+                      <h3>Guided Surf Trips</h3>
+                      <p>By foot, truck or boat, we will get you on the best local surf breaks depending on what you want, the conditions of the day and your level of ability. If we head out by boat, you can choose to make a day of it and combine it with a few hours of fishing. Drinks and lunch options available.</p>
+                    </div>
+                    <div class="link">
+                      <a href="mailto:hola@sardina.surf">Get in touch about our Surf Trips</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-6" class="section-6">
+            <div class="container">
+              <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                  <div class="tide">
+                    <img src="img/tide-blue.svg">
+                  </div>
+                  <div class="text">
+                    <p>Need to hire a board? No worries, choose from our selection of short, beginner and longboards at reasonable rates</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-7" class="section-7">
+            <div class="wrapper">
+              <div class="image-wrapper">
+                <img src="img/_DSC4868.jpg">
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-5">
+                    <div class="text-wrapper">
+                      <div class="text">
+                        <p>Our talented surf photographer can capture your adventure for you to share and treasure.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-8" class="section-8">
+            <h2>The Location</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-1">
+                  <div class="swiper-prev">
+                    <!-- <img src="img/arrow-left.svg"> -->
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-image" style="background-image:url(img/Panorama_Sardina_1.jpg)"></div>
+                        <div class="swiper-slide-caption">Playa Sardina on a small day</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-image" style="background-image:url(img/_DSC4669.jpg)"></div>
+                        <div class="swiper-slide-caption">Local eating spot, steps from the beach</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-image" style="background-image:url(img/_DSC4983_RE.jpg)"></div>
+                        <div class="swiper-slide-caption">Sunset on the rocks from Playa Sardina</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="swiper-next">
+                    <!-- <img src="img/arrow-right.svg"> -->
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 pagination-wrapper">
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-9" class="section-9">
+            <div class="container">
+              <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="text">
+                        <p>Popoyo is a rural spot on the Southern Pacific Coast of Nicaragua. Expect a raw and authentic, untouched surf paradise with sunshine and waves year round due to 300 plus days a year bringing offshore winds.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="section-10" class="section-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="locations">
+                            <h2>Local Guide</h2>
+                            <select id="location-mobile">
+                                <option value="surf">Surf</option>
+                                <option value="stay">Stay</option>
+                                <option value="explore">Explore</option>
+                            </select>
+                            <div class="location-mobile">
+                                <span>Surf</span>
+                            </div>
+                            <ul>
+                                <li class="list-surf" data-type="surf">Surf</li>
+                                <li class="list-stay" data-type="stay">Stay</li>
+                                <li class="list-explore" data-type="explore">Explore</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper">
+              <div id="map" class="map"></div>
+            </div>
+          </section>
+
+          <section id="section-11" class="section-11">
+            <h2>Practical Information</h2>
+            <div class="background">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="text-wrapper">
+                          <div class="text">
+                              <p>Sardina is based at Camping Luna, which is in the middle of the best surf breaks and where you can enjoy a night under the stars in one of the hamacas for as little as $5 per night (tents and pitches also available). See our Local Guide section for more details on the surf and other places to stay.</p>
+                              <a href="mailto:hola@sardina.surf">Get in touch</a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+          <section id="section-12" class="section-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4 desktop">
+                  <div class="text-wrapper">
+                    <div class="text">
+                      <h3>The Weather</h3>
+                      <p>The tropical climate brings a wet season which typically lasts from May to December and a dry season from January to April, when you might want to bring a spring suit. With the exception of October (which is usually filled with heavy rain) we really do have world class waves year round.</p>
+                      <p>Nicaragua, the land of the offshore.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6">
+                  <div class="image-wrapper" style="background-image:url(img/_DSC4811.jpg)"></div>
+                </div>
+                <div class="col-4 tablet">
+                  <div class="text-wrapper">
+                    <div class="text">
+                      <h3>The Weather</h3>
+                      <p>The tropical climate brings a wet season which typically lasts from May to December and a dry season from January to April, when you might want to bring a spring suit. With the exception of October (which is usually filled with heavy rain) we really do have world class waves year round.</p>
+                      <p>Nicaragua, the land of the offshore.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="image-wrapper" style="background-image:url(img/_DSC4575.jpg)"></div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                  <div class="text-wrapper">
+                    <div class="text">
+                      <h3>Getting Here</h3>
+                      <p>To get to the area you’ve got a few options - drive (best in 4x4 or on a decent motorbike), taxi transfer or the local bus which stops in Las Salinas, the local village.  Some people even choose to cycle.</p>
+                      <p>Getting to Sardina? We will come to you. Providing you’re staying in the Popoyo area then we will pick you up and drop you back at the end of your adventure with us.  If you want to stay with us at Camping Luna, let us know in advance then we can help with directions, arrange a taxi transfer or pick you up from the bus stop in Las Salinas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="tide">
+                    <img src="img/tide-blue.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer id="section-13">
+            <div class="footer">
+              <div class="footer-1">
+                <div class="footer__meta--wrapper">
+                  <div class="footer__meta">
+                    <h3>Find us</h3>
+                    <h4>Camping Luna,
+                    <br />Calle Popoyo,
+                    <br />100 metres before
+                    <br />Magnific Rock Hotel,
+                    <br />Popoyo, Las Salinas
+                    <br />Nicaragua</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-2">
+                <div class="footer__meta--wrapper">
+                  <div class="footer__meta">
+                    <h3>Contact us</h3>
+                    <h4><a href="mailto:hola@sardina.surf">hola@sardina.surf</a>
+                    <br /><a href="tel:+50581402601">+505 8140 2601</a>
+                    <br /><a href="tel:+447779776115">+44 7779 776115</a>
+                    <span>A local movement</span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-3">
+                <div class="footer__meta--wrapper">
+                  <div class="footer__meta">
+                    <h3>Follow us</h3><ul class="social">
+                      <li><a href="https://www.facebook.com/sardina.surf/" target="_blank"><img src="img/facebook.svg"></a></li>
+                      <li><a href="https://www.instagram.com/sardina.surf/" target="_blank"><img src="img/instagram.svg"></a></li>
+                    </ul>
+                  </div>
+                  <h5>© 2018 Sardina</h5>
+                  <span>A local movement</span>
+                </div>
+              </div>
+              <div class="footer-4"></div>
+              <div class="footer-5">
+                <div class="footer__meta--wrapper large">
+                  <div class="footer__credit">
+                    <span>Site designed by</span>
+                    <a href="http://thecreators.club/" target="_blank">The Creators Club</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-footer__meta--wrapper">
+                <div class="footer__credit">
+                  <span>Site designed by </span><a href="http://thecreators.club/" target="_blank">The Creators Club</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
 </html>

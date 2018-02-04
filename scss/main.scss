@@ -1,0 +1,1106 @@
+body {
+  background-color: $blue1;
+}
+
+.med {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+@media only screen and (max-width: $breakpoint-xlarge) {
+  .tablet {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-med) {
+  .med {
+    display: block;
+  }
+  .large {
+    display: none;
+  }
+}
+
+.marker {
+  opacity: 0.8;
+  background-image: url("img/marker.png");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  &.selected {
+    opacity: 1;
+    border: solid 2px $orange1;
+    border-radius: 30px;
+  }
+}
+
+.mapboxgl-popup {
+  padding-bottom: 30px;
+  max-width: 280px;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  word-break: break-word;
+  h3 {
+    color: $black1;
+    font-size: 18px;
+    font-family: $font-medium;
+    font-weight: normal;
+  }
+  p {
+    color: $black1;
+    font-size: 18px;
+    font-family: $font-regular;
+  }
+}
+
+.mapboxgl-popup-content {
+  padding-top: 20px !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.popup-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.popup-bottom {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  background-color: $orange1;
+  vertical-align: top;
+  a {
+    color: $white1;
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 35px;
+    text-decoration: none;
+  }
+  img {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+  }
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: $orange1 !important;
+}
+
+.overlay {
+  -webkit-overflow-scrolling: touch;
+  z-index: 100;
+  display: table;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background-color: $blue1;
+  cursor: pointer;
+  &.hide {
+    display: none;
+    opacity: 0;
+  }
+  ul {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    li {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      cursor: pointer;
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      a {
+        opacity: 0.75;
+        color: $white1;
+        font-family: $font-regular;
+        font-size: 32px;
+        text-decoration: none;
+        transition: all 0.25s;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+main {
+  min-height: 100%;
+  section {
+    &.section-1 {
+      padding-top: 100px;
+      width: 100%;
+      height: calc(100vh - 100px);
+      background-image: url("../img/_DSC4988.jpg");
+      background-size: cover;
+      background-position: center;
+      .headline-wrapper {
+        display: table;
+        width: 100%;
+        height: 100%;
+      }
+      .headline {
+        display: table-cell;
+        vertical-align: middle;
+        padding-bottom: 100px;
+        width: 100%;
+        h2 {
+          color: $white1;
+          font-size: 66px;
+          font-family: $font-headline;
+          line-height: 1;
+          text-align: center;
+          @media only screen and (max-width: $breakpoint-small) {
+            font-size: 30px;
+          }
+          @media screen and (max-width: 960px) and (orientation: landscape) {
+            font-size: 30px;
+          }
+        }
+        .tide {
+          padding-top: 20px;
+          text-align: center;
+          img {
+            width: 110px;
+            @media only screen and (max-width: $breakpoint-small) {
+              width: 80px;
+            }
+            @media screen and (max-width: 960px) and (orientation: landscape) {
+              width: 80px;
+            }
+          }
+        }
+      }
+      .arrow-down {
+        position: absolute;
+        margin-top: -120px;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.25s;
+        &:hover {
+          opacity: 0.75;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          margin-top: -90px;
+          img {
+            width: 20px;
+          }
+        }
+        @media screen and (max-width: 960px) and (orientation: landscape) {
+          margin-top: -60px;
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+
+    &.section-2 {
+      background-color: $pink1;
+      .text-wrapper {
+        display: table;
+        width: 100%;
+        height: 500px;
+        @media only screen and (max-width: $breakpoint-med) {
+          height: 600px;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          height: auto;
+        }
+        .text {
+          display: table-cell;
+          vertical-align: middle;
+          @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+          }
+        }
+      }
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      p {
+        color: $orange1;
+        font-family: $font-regular;
+        font-size: 30px;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 24px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-2 {
+          display: none;
+        }
+        .col-8 {
+          width: $width;
+        }
+      }
+    }
+
+    &.section-3 {
+      background-color: $black1;
+      .row [class^="col"] {
+        margin: 0 2%;
+      }
+      .wrapper {
+        position: relative;
+        .text-wrapper {
+          display: table;
+          width: 100%;
+          height: 500px;
+          .text {
+            display: table-cell;
+            vertical-align: middle;
+            @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+              padding-left: 2.5%;
+              padding-right: 2.5%;
+            }
+          }
+          @media only screen and (max-width: $breakpoint-med) {
+            height: 600px;
+            .text {
+              text-align: left;
+            }
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: auto;
+          }
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          background: none;
+          .image-wrapper {
+            display: block;
+            margin-top: 30px;
+          }
+        }
+      }
+      p {
+        color: $white1;
+        font-family: $font-regular;
+        font-size: 24px;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 18px;
+        }
+      }
+      .image-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 500px;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          position: static;
+          width: 100%;
+        }
+        @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-xlarge) {
+          height: 600px;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          height: 300px;
+        }
+        background-image: url("../img/_DSC4868.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-5 {
+          width: $width;
+          text-align: center;
+        }
+      }
+    }
+
+    &.section-4 {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: $violet1;
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+      }
+      .text {
+        @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+      }
+      h2 {
+        margin-bottom: 100px;
+        color: $black1;
+        font-family: $font-headline;
+        font-size: 30px;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-small) {
+          margin-bottom: 60px;
+          font-size: 24px;
+        }
+      }
+      p {
+        color: $blue1;
+        font-family: $font-regular;
+        font-size: 24px;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 18px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-2 {
+          display: none;
+        }
+        .col-8 {
+          width: $width;
+        }
+      }
+    }
+
+    &.section-5 {
+      background-color: $violet1;
+      text-align: center;
+      .col-4 {
+        @media only screen and (max-width: $breakpoint-small) {
+          padding-bottom: 30px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-4 {
+          width: $width;
+        }
+      }
+      .wrapper {
+        position: relative;
+        padding-bottom: 50px;
+        height: 560px;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          padding-bottom: 65px;
+          height: auto;
+        }
+        .image {
+          padding-bottom: 50px;
+          @media only screen and (max-width: $breakpoint-med) and (min-width: $breakpoint-small) {
+            margin-left: -2%;
+            margin-right: -2%;
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            padding-bottom: 35px;
+          }
+        }
+        .text {
+          @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+          }
+        }
+        h3 {
+          margin-bottom: 30px;
+          font-family: $font-medium;
+          font-size: 24px;
+          @media only screen and (max-width: $breakpoint-small) {
+            font-size: 18px;
+          }
+        }
+        p {
+          margin-bottom: 18px;
+          font-family: $font-regular;
+          font-size: 18px;
+          @media only screen and (max-width: $breakpoint-small) {
+            font-size: 16px;
+          }
+        }
+        span {
+          color: $blue1;
+          font-family: $font-regular;
+          font-size: 18px;
+          @media only screen and (max-width: $breakpoint-small) {
+            display: block;
+            font-size: 16px;
+            &.no-mobile {
+              display: none;
+            }
+          }
+        }
+      }
+      .link {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          position: static;
+          padding-top: 30px;
+        }
+      }
+      a {
+        white-space: nowrap;
+        display: inline-block;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 100px;
+        background-color: $blue1;
+        color: $white1;
+        font-family: $font-medium;
+        font-size: 18px;
+        text-decoration: none;
+        transition: all 0.25s;
+        &:hover {
+          opacity: 0.75;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          display: block;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        @media only screen and (max-width: $breakpoint-med) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &.section-6 {
+      padding-top: 150px;
+      padding-bottom: 150px;
+      background-color: $violet1;
+      text-align: center;
+      @media only screen and (max-width: $breakpoint-large) {
+        padding-top: 35px;
+        padding-bottom: 100px;
+      }
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-top: 10px;
+      }
+      .tide {
+        padding-bottom: 10px;
+        img {
+          width: 120px;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          img {
+            padding-bottom: 30px;
+            width: 100px;
+          }
+        }
+      }
+      .text {
+        @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+      }
+      p {
+        color: $blue1;
+        font-family: $font-regular;
+        font-size: 24px;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 18px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-3 {
+          display: none;
+        }
+        .col-6 {
+          width: $width;
+        }
+      }
+    }
+
+    &.section-7 {
+      background-color: $black1;
+      .row [class^="col"] {
+        margin: 0 2%;
+      }
+      .wrapper {
+        position: relative;
+        .text-wrapper {
+          display: table;
+          width: 100%;
+          height: 500px;
+          .text {
+            display: table-cell;
+            vertical-align: middle;
+            @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+              padding-left: 2.5%;
+              padding-right: 2.5%;
+            }
+          }
+          @media only screen and (max-width: $breakpoint-med) {
+            height: 600px;
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: auto;
+          }
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          height: auto;
+          background: none;
+          .image-wrapper {
+            display: block;
+            height: 300px;
+          }
+        }
+      }
+      p {
+        color: $white1;
+        font-family: $font-regular;
+        font-size: 24px;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 18px;
+        }
+      }
+      .image-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          position: static;
+          width: 100%;
+        }
+        height: 500px;
+        background-image: url("../img/_DSC4968.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+          display: none;
+        }
+        @media only screen and (max-width: $breakpoint-med) {
+          height: 600px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-5 {
+          width: $width;
+          text-align: center;
+        }
+      }
+    }
+
+    &.section-8 {
+      padding-top: 100px;
+      padding-bottom: 10px;
+      background-color: $green1;
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-top: 90px;
+        padding-bottom: 20px;
+      }
+      h2 {
+        padding-bottom: 100px;
+        font-size: 30px;
+        font-family: $font-headline;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-small) {
+          padding-bottom: 90px;
+          font-size: 24px;
+        }
+      }
+      img {
+        max-width: 100%;
+      }
+      .swiper-container {
+        @media only screen and (max-width: $breakpoint-med) and (min-width: $breakpoint-small) {
+          margin-left: -2%;
+          margin-right: -2%;
+          width: 104%;
+        }
+      }
+      .swiper-slide {
+        .swiper-slide-image {
+          height: 540px;
+          background-size: cover;
+          background-position: center;
+          @media only screen and (max-width: $breakpoint-large) and (min-width: $breakpoint-small) {
+            height: 390px;
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            height: 300px;
+          }
+        }
+        .swiper-slide-caption {
+          padding-top: 40px;
+          padding-bottom: 30px;
+          color: $green2;
+          font-size: 18px;
+          font-family: $font-regular;
+          line-height: 20px;
+          text-align: right;
+          @media only screen and (max-width: $breakpoint-med) {
+            font-size: 16px;
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            padding-top: 20px;
+          }
+        }
+      }
+      .swiper-next, .swiper-prev {
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        width: 40px;
+        height: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.25s;
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+      .swiper-prev {
+        left: 20px;
+        background-image: url(../img/arrow-left.svg);
+      }
+      .swiper-next {
+        right: 20px;
+        background-image: url(../img/arrow-right.svg);
+      }
+      .pagination-wrapper {
+        position: relative;
+        .swiper-pagination {
+          bottom: 30px;
+          color: $green2;
+          font-size: 18px;
+          font-family: $font-regular;
+          line-height: 20px;
+          text-align: left;
+          @media only screen and (max-width: $breakpoint-med) and (min-width: $breakpoint-small) {
+            margin-left: -2%;
+            font-size: 16px;
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            font-size: 16px;
+          }
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-1 {
+          display: none;
+        }
+        .col-10 {
+          width: $width;
+        }
+      }
+    }
+
+    &.section-9 {
+      padding-bottom: 100px;
+      background-color: $green1;
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-bottom: 50px;
+      }
+      .text {
+        @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+      }
+      p {
+        font-size: 24px;
+        font-family: $font-regular;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 18px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-3 {
+          display: none;
+        }
+        .col-6 {
+          width: $width;
+        }
+      }
+    }
+
+    &.section-10 {
+      position: relative;
+      background-color: $orange2;
+      .locations {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        @media only screen and (max-width: $breakpoint-med) {
+          padding-top: 100px;
+          padding-bottom: 100px;
+        }
+        h2 {
+          margin-bottom: 90px;
+          font-family: $font-headline;
+          font-size: 30px;
+          text-align: center;
+          @media only screen and (max-width: $breakpoint-small) {
+            margin-bottom: 40px;
+            font-size: 24px;
+          }
+        }
+
+        .location-mobile {
+          display: none;
+          border-top: solid 3px $black1;
+          border-bottom: solid 3px $black1;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          background-image: url("../img/caret-down.svg");
+          background-position: right center;
+          background-repeat: no-repeat;
+          font-size: 24px;
+          font-family: $font-medium;
+          line-height: 40px;
+          @media only screen and (max-width: $breakpoint-large) {
+            display: block;
+          }
+        }
+
+        ul {
+          @media only screen and (max-width: $breakpoint-large) {
+            display: none;
+          }
+          border-top: solid 3px $black1;
+          &.surf-selected {
+            border-top: solid 3px $orange1;
+            li:nth-of-type(1) {
+              border-bottom: solid 3px $orange1;
+              background-image: url("../img/caret-right-orange.svg");
+            }
+          }
+          &.stay-selected {
+            li:nth-of-type(1) {
+              border-bottom: solid 3px $orange1;
+            }
+            li:nth-of-type(2) {
+              border-bottom: solid 3px $orange1;
+              background-image: url("../img/caret-right-orange.svg");
+            }
+          }
+          &.explore-selected {
+            li:nth-of-type(2) {
+              border-bottom: solid 3px $orange1;
+            }
+            li:nth-of-type(3) {
+              border-bottom: solid 3px $orange1;
+              background-image: url("../img/caret-right-orange.svg");
+            }
+          }
+          li {
+            border-bottom: solid 3px $black1;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-image: url("../img/caret-right.svg");
+            background-position: right center;
+            background-repeat: no-repeat;
+            font-size: 24px;
+            font-family: $font-medium;
+            line-height: 40px;
+            list-style: none;
+            cursor: pointer;
+            transition: background 0.5s;
+            &:hover {
+              background-image: url("../img/caret-right-orange.svg");
+            }
+            &:last-of-type {
+              border-bottom: solid 3px $black1;
+            }
+            &.border-bottom {
+              border-bottom: solid 3px $orange1;
+            }
+            &.caret-right-orange {
+              background-image: url("../img/caret-right-orange.svg");
+            }
+            @media only screen and (max-width: $breakpoint-med) {
+              font-size: 18px;
+            }
+          }
+        }
+        select {
+          @media only screen and (min-width: $breakpoint-large) {
+            display: none;
+          }
+          width: 100%;
+          height: 80px;
+          position: absolute;
+          margin-top: 0;
+          opacity: 0;
+        }
+      }
+      .map-wrapper{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          position: static;
+          width: 100%;
+          height: 660px;
+        }
+        height: 100%;
+        .map {
+          height: 100%;
+          color: $orange1;
+          font-family: $font-medium;
+        }
+        @media only screen and (max-width: $breakpoint-med) {
+          height: 600px;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          position: relative;
+          width: 100%;
+          height: 500px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-5 {
+          width: $width;
+        }
+      }
+    }
+
+    &.section-11 {
+      padding-top: 100px;
+      padding-bottom: 65px;
+      background-color: $violet1;
+      .background {
+        @media only screen and (max-width: $breakpoint-small) {
+          background:
+          linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("../img/_DSC5007.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-med) {
+        padding-bottom: 100px;
+      }
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      h2 {
+        margin-bottom: 100px;
+        font-family: $font-headline;
+        font-size: 30px;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-small) {
+          margin-bottom: 50px;
+          font-size: 24px;
+        }
+      }
+      @media only screen and (max-width: $breakpoint-med) and (min-width: $breakpoint-small) {
+        .row {
+          margin-left: -2%;
+          margin-right: -2%;
+          width: 104%;
+        }
+      }
+      .col-12 {
+        background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
+        url("../img/_DSC5007.jpg");
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-small) {
+          background: none;
+        }
+        .text-wrapper {
+          margin-left: 22.5%;
+          margin-right: 22.5%;
+          padding-left: 2%;
+          padding-right: 2%;
+          width: 46%;
+          .text {
+            @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+              padding-left: 2.5%;
+              padding-right: 2.5%;
+            }
+          }
+          @media only screen and (max-width: $breakpoint-xlarge) {
+            margin-left: 0;
+            margin-right: 0;
+            width: 96%;
+          }
+        }
+        p {
+          margin-top: 260px;
+          color: $white1;
+          font-family: $font-regular;
+          font-size: 24px;
+          @media only screen and (max-width: $breakpoint-large) {
+            margin-top: 100px;
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            font-size: 18px;
+          }
+        }
+        a {
+          display: inline-block;
+          margin-top: 120px;
+          margin-bottom: 120px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 50px;
+          padding-right: 50px;
+          border: solid 2px $white1;
+          border-radius: 100px;
+          color: $white1;
+          font-family: $font-medium;
+          font-size: 18px;
+          text-decoration: none;
+          transition: all 0.25s;
+          &:hover {
+            opacity: 0.75;
+          }
+          @media only screen and (max-width: $breakpoint-large) {
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+          @media only screen and (max-width: $breakpoint-small) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &.section-12 {
+      padding-top: 50px;
+      padding-bottom: 35px;
+      background-color: $violet1;
+      text-align: center;
+      @media only screen and (max-width: $breakpoint-large) {
+        padding-top: 35px;
+      }
+      .row {
+        padding-bottom: 65px;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          padding-bottom: 30px;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          padding-bottom: 0;
+        }
+      }
+      .tide {
+        padding-top: 35px;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          padding-top: 0;
+          padding-bottom: 35px;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          padding-top: 10px;
+        }
+        img {
+          width: 120px;
+        }
+      }
+      .text-wrapper {
+        display: table;
+        width: 100%;
+        height: 500px;
+        @media only screen and (max-width: $breakpoint-xlarge) {
+          padding-top: 50px;
+          padding-bottom: 50px;
+          height: auto;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          padding-bottom: 40px;
+          height: auto;
+        }
+      }
+      .text {
+        display: table-cell;
+        vertical-align: middle;
+        @media only screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-large) {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+      }
+      .image-wrapper {
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        @media only screen and (max-width: $breakpoint-med) and (min-width: $breakpoint-small) {
+          margin-left: -2%;
+          margin-right: -2%;
+          height: 430px;
+        }
+        @media only screen and (max-width: $breakpoint-small) {
+          height: 200px;
+        }
+      }
+      h3 {
+        margin-bottom: 30px;
+        font-family: $font-medium;
+        font-size: 24px;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 18px;
+        }
+      }
+      p {
+        margin-bottom: 18px;
+        font-family: $font-regular;
+        font-size: 18px;
+        @media only screen and (max-width: $breakpoint-small) {
+          font-size: 16px;
+        }
+      }
+      img {
+        max-width: 100%;
+      }
+      @media only screen and (max-width: $breakpoint-xlarge) {
+        .col-1 {
+          display: none;
+        }
+        .col-4, .col-6 {
+          width: $width;
+        }
+      }
+    }
+  }
+}
